@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. A.P.J. Abdul Kalam - Tribute Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #020617, #000);
+      color: #f5f5f5;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 50px;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      letter-spacing: 1.5px;
+      color: #00ffff;
+      text-shadow: 0 0 20px #00ffff;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .video-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 100px auto 50px;
+      background: none;
+      border: 3px solid #00ffff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      color: #00ffff;
+      font-size: 2em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      animation: pulse 2s infinite, fadeIn 1.5s ease;
+    }
+
+    .video-button:hover {
+      background-color: #00ffff;
+      color: #000;
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #00ffff;
+    }
+
+    .image-section {
+      text-align: center;
+      margin-top: 30px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .image-section img {
+      width: 280px;
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      filter: grayscale(80%);
+      transition: all 0.5s ease;
+      box-shadow: 0 0 30px rgba(0,255,255,0.4);
+    }
+
+    .image-section img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.08);
+      box-shadow: 0 0 40px #00ffff;
+    }
+
+    .quote {
+      text-align: center;
+      margin: 80px 20px;
+      font-size: 1.5em;
+      font-weight: 300;
+      color: #f1f1f1;
+      animation: fadeInUp 1.4s ease;
+    }
+
+    .bio {
+      max-width: 850px;
+      margin: 80px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0,255,255,0.1);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .bio h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .bio p {
+      line-height: 1.8;
+      color: #ddd;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,255,255,0.4); }
+      70% { box-shadow: 0 0 0 25px rgba(0,255,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,255,255,0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      .video-button { width: 80px; height: 80px; font-size: 1.5em; }
+      .image-section img { width: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dr. A.P.J. Abdul Kalam</h1>
+    <p>1931 – 2015</p>
+  </header>
+
+<a class="video-button" href="https://www.youtube.com/watch?v=GXkYSh045Dk" target="_blank">
+  ▶
+</a>
+
+
+  <div class="image-section">
+   <img src="images\img.jpg" alt="Dr. A.P.J. Abdul Kalam">
+
+
+  </div>
+
+  <div class="quote">
+    “Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.”
+  </div>
+
+  <div class="bio">
+    <h2>Biography</h2>
+    <p>
+      Dr. A.P.J. Abdul Kalam, fondly remembered as the *People’s President*, was an inspiring scientist, visionary leader, and a true patriot. 
+      He played a key role in India’s missile and space programs, earning him the title *“Missile Man of India.”*  
+      His humble beginnings in Rameswaram to becoming the 11th President of India show his deep faith in hard work, education, and service.
+      <br><br>
+      Dr. Kalam believed in empowering youth through education and innovation. His life was dedicated to the dream of a developed India, and he continues to inspire generations to think big, act with purpose, and stay grounded in values.
+    </p>
+  </div>
+
+  <footer>
+    Made by <a href="#">Kamesh</a> | Tribute Page Project
+  </footer>
+
+</body>
+</html>
